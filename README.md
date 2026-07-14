@@ -44,13 +44,13 @@ For patient (i), the model receives:
 
 [
 X_i =
-[
-X_i^{clinical},
-X_i^{expression},
-X_i^{mutation},
-X_i^{CNA},
-X_i^{pathway}
-]
+\left[
+X_i^{\text{clinical}},
+X_i^{\text{expression}},
+X_i^{\text{mutation}},
+X_i^{\text{CNA}},
+X_i^{\text{pathway}}
+\right]
 ]
 
 and predicts a risk score:
@@ -72,6 +72,7 @@ where:
 * (h_i(t)) is the hazard of patient (i);
 * (h_0(t)) is the baseline hazard;
 * (r_i) is the neural-network risk score.
+
 
 The model can subsequently estimate survival probabilities at clinically relevant time horizons using the Breslow baseline-hazard estimator.
 
